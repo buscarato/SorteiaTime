@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: green;
+}
+
+body {
+    /* background: linear-gradient(90deg, #7F00FF 0%, #E100FF 100%); */
+    background: linear-gradient(90deg, rgba(59, 59, 191, 1) 44%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+
+.container {
+    /* espaçamento fora do container */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* espaçamento dentro do container */
+    padding: 20px 20px;
+    width: 375px;
+    /* height: 498px; */
+    left: 0px;
+    top: 50px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+#txtDados {
+    width: 195px;
+    height: 40px;
+    left: 0px;
+    top: 16px;
+    border: 2px solid #8d8787b2;
+    ;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+#times {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+
+.itemTimes1 {
+    background: linear-gradient(90deg, rgb(219, 219, 231) 44%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px 40px;
+    position: relative;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 10px;
+    color: #0b0b0c;
+    top: 20PX;
+    Margin-top: 5px;
+}
+
+.itemTimes2 {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1), rgb(219, 219, 231) 66% 100%);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px 40px;
+    position: relative;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 10px;
+    color: #0b0b0c;
+    top: 20px;
+}
+
+.btnTime1 {
+    border: none;
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+
+.itemTarefas {
+    background: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 40px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.nomeTarefa {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.delete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.confirma {
+    border: none;
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-check {
+    color: #0000CD;
+}
+
+.fa-trash-can {
+    color: #DC143C;
+}
+
+#btnAdd {
+    border: none;
+    width: 130px;
+    height: 40px;
+    left: 390px;
+    top: 30px;
+    /* background: #8052EC; */
+    background: #1E90FF;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+
+
+#btnAdd:hover {
+    opacity: 0.8;
+}
+
+#btnAdd:active {
+    opacity: 0.5;
+}
+
+
+
+/* adicionar novo botão para sorteio de atleta  */
+#btnSorteio {
+    border: none;
+    width: 335px;
+    height: 30px;
+    right: 5px;
+    top: 10px;
+
+    background: #1E90FF;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    Margin-top: 5px;
+
+}
+
+
+/* adicionar novo botão para sorteio de atleta  */
+#btnVoltar {
+    border: none;
+    width: 335px;
+    height: 30px;
+    right: 5px;
+    top: 5px;
+    background: #1E90FF;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+
+#btnSorteio:hover {
+    opacity: 0.8;
+}
+
+#btnSorteio:active {
+    opacity: 0.5;
+}
+
+
+
+
+.fa-circle-plus {
+    color: white;
+}
+
+.itemTarefas:hover .confirma {
+    opacity: 1;
+
+}
+
+.itemTarefas:hover .delete {
+    opacity: 1;
+}
+
+/* aqui vai a configuração das paradas concluidas  */
+.concluido {
+    background: #87CEEB;
+    text-decoration: line-through;
+}
